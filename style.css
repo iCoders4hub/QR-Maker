@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+}
+
+:root {
+    --primary-color: #8424d3;
+    --secondary-color: #651cb8;
+    --accent-color: #28a745;
+    --background-gradient: linear-gradient(135deg, #4e1d85, #320858);
+    --text-color: #fff;
+    --header-bg: linear-gradient(135deg, #4e1d85, #320858);
+    --footer-bg: linear-gradient(135deg, #4e1d85, #320858);
+    --button-hover: #9c55f8;
+    --border-radius: 12px;
+    --box-shadow: 0 4px 12px rgba(62, 9, 97, 0.63);
+}
+
+body {
+    font-family: "Tajawal", sans-serif;
+    background: var(--background-gradient);
+    color: var(--text-color);
+    direction: rtl;
+    text-align: center;
+    line-height: 1.6;
+    
+}
+
+header {
+    
+    background: var(--header-bg);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #8740d8;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #a75ce4bd;
+}
+
+.form-container {
+    background-color: rgba(87, 17, 133, 0.137);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: 2px solid var(--secondary-color);
+    backdrop-filter: blur(10px);
+}
+
+.input-field {
+    padding: 12px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: var(--primary-color);
+}
+
+.qr-options {
+    text-align: right;
+    margin: 15px 0;
+}
+
+.qr-options label {
+    font-weight: 600;
+}
+
+.qr-options input {
+    margin-right: 10px;
+}
+
+.generate-btn {
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.generate-btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.qr-code-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(10px);
+}
+
+#qrcode img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    border: 2px solid rgba(45, 194, 40, 0.8);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #34c554;
+    transform: translateY(-2px);
+}
+
+footer {
+    background: var(--footer-bg);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    
+}
+
+footer a {
+    color: #a13efd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #b36cf5;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+
+    .generate-btn, .download-btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+
+svg {
+    font-family: "Preahvihear", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+svg text {
+    animation: stroke 3s infinite alternate;
+    stroke-width: 2;
+    stroke: #365FA0;
+    font-size: 100px;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgb(131, 34, 223);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+    70% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgb(131, 34, 223);
+    }
+    80% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: rgb(131, 34, 223);
+        stroke-width: 3;
+    }
+    100% {
+        fill: rgb(131, 34, 223);
+        stroke: rgba(54, 95, 160, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+
+.wrapper {
+    background-color: var(--background-color);
+}
+
+.error-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f12c2c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slide-in 0.5s ease-out;
+    font-size: 1.2rem;
+    z-index: 9999;
+}
+
+.error-message .fa-regular {
+    font-size: 20px; 
+    color: rgb(255, 154, 154); 
+    margin-left: 10px; 
+}
+
+.success-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #42e23c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slide-in 0.5s ease-out;
+    font-size: 1.2rem;
+    z-index: 9999;
+}
+
+.success-message .fa-regular {
+    font-size: 20px; 
+    color: rgb(167, 255, 167); 
+    margin-left: 10px; 
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.error-message.hide {
+    animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+.qr-options input[type="color"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
