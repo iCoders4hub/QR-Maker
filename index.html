@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Maker</title>
-    <meta name="description" content="هو مشروع تم تطويره من قبل شادو ليساعدك على انشاء QR CODE خاص بك بأقل من 10 ثواني و بشكل مجاني 100%">
+    <meta name="description" content="is a professional and easy-to-use website that helps you create and fully customize QR codes">
     <meta name="author" content="QR MAKER">
     <link rel="icon" href="icon.png">
     <link rel="stylesheet" href="style.css">
@@ -17,8 +17,8 @@
     <header>
         <div class="container">
             <img src="icon.png" alt="QR CODE ICON" class="logo">
-            <h1>صانع الـ QR CODE</h1>
-            <h2>هو مشروع تم تطويره من قبل شادو ليساعدك على انشاء QR CODE خاص بك بأقل من 10 ثواني و بشكل مجاني 100%</h2>
+            <h1>QR MAKER</h1>
+            <h2>is a professional and easy-to-use website that helps you create and fully customize QR codes</h2>
         </div>
         
     </header>
@@ -26,33 +26,33 @@
     <main>
         <div class="container">
             <div class="form-container">
-                <input type="text" id="qr-input" placeholder="اكتب الرابط الي لما شخص يسوي SCAN للكود يوديه عليه" class="input-field">
+                <input type="text" id="qr-input" placeholder="The link that when someone scans it, it will be sent to him." class="input-field">
                 <div class="qr-options">
-                    <label for="size">حجم الكود</label>
+                    <label for="size">QR CODE SIZE</label>
                     <input type="range" id="size" min="100" max="500" value="200">
                     <br>
-                    <label for="color">لون الكود</label>
+                    <label for="color">QR CODE COLOR</label>
                     <input type="color" id="color" value="#000000">
                     <br>
-                    <label for="bg-color">لون الخلفية</label>
+                    <label for="bg-color">BG COLOR</label>
                     <input type="color" id="bg-color" value="#ffffff">             
                     
                 </div>
-                <button onclick="generateQRCode()" class="generate-btn">اضغط لتوليد كود</button>
+                <button onclick="generateQRCode()" class="generate-btn">GENERATE CODE</button>
             </div>
 
             <div id="qrcode" class="qr-code-container"></div>
 
-            <a id="download-link" href="#" download="qr-maker.png" class="download-btn" style="display: none;">اضغط لتحميل الكود</a>
+            <a id="download-link" href="#" download="qr-maker.png" class="download-btn" style="display: none;">DOWNLOWND QR CODE</a>
         </div>
     </main>
 
     <div id="error-message" class="error-message" style="display: none;">
-        <span class="fa-regular fa-circle-xmark"></span> يجب ان تضع رابطًا
+        <span class="fa-regular fa-circle-xmark"></span> MUST PUT A LINK  
     </div>
 
     <div id="success-message" class="success-message" style="display: none;">
-        <span class="fa-regular fa-check-circle"></span> تم انشاء الكود
+        <span class="fa-regular fa-check-circle"></span> DONE CREATED QR CODE
     </div>
 
     <div class="wrapper">
@@ -65,10 +65,10 @@
         <div class="container">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
                 <div class="text-gray-400">
-                    © جميع الحقوق محفوظة لـ
-                    <a href="https://www.youtube.com/@shadow4dev" target="_blank" rel="noopener noreferrer" class="text-white font-medium hover:text-purple-400 transition-colors">شادو</a>
+                    QR MAKER WAS DEVELOPED BY CODERS HUB © 2025
+                    <a href="https://coders4hub.com" target="_blank" rel="noopener noreferrer" class="text-white font-medium hover:text-purple-400 transition-colors">WebSite</a>
                 </div>
-                <a href="https://discord.gg/eWW4PEQp8Q" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">سيرفر تايلند كودز</a>
+                <a href="https://discord.gg/3vmVVApQZQ" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">Discord Server</a>
             </div>
         </div>
     </footer>
