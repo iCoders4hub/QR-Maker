@@ -6,13 +6,13 @@
 }
 
 :root {
-    --primary-color: #8424d3;
-    --secondary-color: #651cb8;
-    --accent-color: #28a745;
-    --background-gradient: linear-gradient(135deg, #4e1d85, #320858);
+    --primary-color: #7b19bd;
+    --secondary-color: #a237e9;
+    --accent-color: #30bd50;
+    --background-gradient: linear-gradient(135deg, #090010, #25022e);
     --text-color: #fff;
-    --header-bg: linear-gradient(135deg, #4e1d85, #320858);
-    --footer-bg: linear-gradient(135deg, #4e1d85, #320858);
+    --header-bg: linear-gradient(135deg, #320e4d, #280431);
+    --footer-bg: linear-gradient(135deg, #090010, #25022e);
     --button-hover: #9c55f8;
     --border-radius: 12px;
     --box-shadow: 0 4px 12px rgba(62, 9, 97, 0.63);
@@ -62,7 +62,7 @@ h2 {
 }
 
 .form-container {
-    background-color: rgba(87, 17, 133, 0.137);
+    background-color: rgba(83, 16, 128, 0.137);
     padding: 20px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
